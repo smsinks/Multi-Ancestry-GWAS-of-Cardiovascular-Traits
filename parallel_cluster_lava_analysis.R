@@ -10,7 +10,7 @@ library(foreach)
 library(doParallel)
 
 # 1) Set up directories and files
-WORKDIR <- "/scratch/01483812/ukbiobank"
+WORKDIR <- "path//ukbiobank"
 BLOCKS  <- file.path(WORKDIR, "lava_blocks_hg19.txt")
 
 # --- CHANGE 1: Corrected LD reference paths as you requested ---

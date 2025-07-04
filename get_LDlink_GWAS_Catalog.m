@@ -3,16 +3,16 @@
 clc; clear; close all force
 
 try
-    cd '/Users/sinkala/Documents/MATLAB/UKBioBank/cardiovascularNewAnalysis'
+    cd 'path/UKBioBank/cardiovascularNewAnalysis'
     
     % add the path to the GWAS results for Africans and Europeans
-    addpath(['/Users/sinkala/Documents/MATLAB/UKBioBank/' ...
+    addpath(['path/UKBioBank/' ...
         'cardiovascularNewAnalysis/eur_afr_gwas'])
     
     onHPC_Cluster = false;
 catch
-    addpath('/scratch/snkmus003/ukbiobank')
-    cd '/scratch/snkmus003/ukbiobank/heartPaper'
+    addpath('path//ukbiobank')
+    cd 'path//ukbiobank/heartPaper'
    
     % specificy that we are working on the cluster
     onHPC_Cluster = true;

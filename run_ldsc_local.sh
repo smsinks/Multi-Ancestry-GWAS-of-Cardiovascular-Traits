@@ -9,7 +9,7 @@ which ldsc.py
 ldsc.py --help | head -n2
 
 ## 1) Paths
-WORKDIR="$HOME/Documents/MATLAB/UKBioBank/cardiovascularNewAnalysis/new_LDSC_analysis"
+WORKDIR="$HOMEpath/cardiovascularNewAnalysis/new_LDSC_analysis"
 cd "$WORKDIR"
 
 ## 2) HapMap3 SNP‐list

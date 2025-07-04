@@ -3,16 +3,16 @@
 clc; clear; close all force
 
 try
-    cd '/Users/sinkala/Documents/MATLAB/UKBioBank/cardiovascularNewAnalysis'
+    cd 'path//MATLAB/UKBioBank/cardiovascularNewAnalysis'
     
     % add the path to the GWAS results for Africans and Europeans
-    addpath(['/Users/sinkala/Documents/MATLAB/UKBioBank/' ...
+    addpath(['path//MATLAB/UKBioBank/' ...
         'Manuscript Heart/eur_afr_gwas'])
     
     onHPC_Cluster = false;
 catch
-    addpath('/scratch/snkmus003/ukbiobank')
-    cd '/scratch/snkmus003/ukbiobank/heartPaper'
+    addpath('path/ukbiobank')
+    cd 'path/ukbiobank/heartPaper'
    
     % specificy that we are working on the cluster
     onHPC_Cluster = true;
@@ -712,7 +712,7 @@ plotNames = { ...
 myGroups = {'AFR','EUR'};
 
 % Folder where enrichment files are located
-myPath = ['/Users/sinkala/Documents/MATLAB/UKBioBank/',...
+myPath = ['path//MATLAB/UKBioBank/',...
     'cardiovascularNewAnalysis/enrichR_results'];
 
 % Loop through each enrichment file
@@ -2279,7 +2279,7 @@ clear locAFR locEUR ii curAFR curEUR
 %% FUMA analysis 
 
 % I have put the process files for FUMA analysis here 
-% /scratch/snkmus003/ukbiobank/heartPaper/fuma_input
+% path/ukbiobank/heartPaper/fuma_input
 warning('off','all');
 
 % This part of script get statistc of the common snps, the lead snps, and
@@ -4401,7 +4401,7 @@ afr_top5 = readtable('jass_results/afr_multitrait_topresults.txt') ;
 % the colors to use the for two groups
 groupColors = [ 0.47,0.67,0.19; 0.85,0.33,0.10  ] ;
 
-myPath = ['/Users/sinkala/Documents/MATLAB/UKBioBank/', ...
+myPath = ['path//MATLAB/UKBioBank/', ...
     'cardiovascularNewAnalysis/'];
 
 % set up the genes 
